@@ -1,0 +1,4 @@
+#/non-production/sector-1/kustomization.yaml
+# specify resources to be synced or rendered
+resources:
+- "helm-charts" # renders sector specific helm-charts
