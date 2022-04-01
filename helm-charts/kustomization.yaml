@@ -1,0 +1,10 @@
+# non-production/helm-charts/kustomization.yaml
+# usage example for helm charts scoped at environment level 
+# applicable for platform and CISO clusters
+helmCharts:
+ - name: cert-manager
+   repo: https://charts.jetstack.io
+   version: v1.7.0
+   releaseName: my-cert-manager
+   valuesFile: values.yaml
+   namespace: platform
